@@ -11,10 +11,10 @@ function computerminds(){
     if(randomChoice < 0.333333){ 
        $("#computerChoice").text("rock");
     }
-    else if(randomChoice < 0.666666){
+    else if(randomChoice > 0.333333 && randomChoice < 0.666666){
         $("#computerChoice").text("paper");
     }
-    else{
+    else if(randomChoice > 0.666666 && randomChoice < 0.999999){
         $("#computerChoice").text("scissors");
     }
         console.log(randomChoice);
@@ -33,13 +33,13 @@ function results(){
 
         }
     else if(computerChoice==="paper" && inputs==="scissors"){
-        $("#result").text("Tie");
-                console.log("player Wins");
+        $("#result").text("Player Wins");
+                console.log("Player Wins");
 
         }
     else if(computerChoice==="paper"  && inputs==="rock"){
-        $("#result").text("Player Wins");
-                console.log("Player Wins");
+        $("#result").text("Computer Wins");
+                console.log("Computer Wins");
 }
     else if(computerChoice==="rock" && inputs==="scissors"){
         $("#result").text("Computer Wins");
