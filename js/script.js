@@ -4,6 +4,15 @@
 
 //GLOBAL VARIABLES
 /* global $ */
+$("#shoot").click(function(){
+    var input = $("#input").val();
+
+    $("#result").text(results());
+    $("#userChoice").text(input);
+    $("#computerChoice").text(computerminds());
+
+});
+
 function computerminds(){
     
     var randomChoice = Math.random();
@@ -75,11 +84,3 @@ function results(){
     }
 
 // working buttons
-$("#shoot").click(function(){
-    var input = $("#input").val();
-
-    $("#result").text(results());
-    $("#userChoice").text(input);
-    $("#computerChoice").text(computerminds());
-
-});
