@@ -1,3 +1,7 @@
+body{
+  background-color:black;
+  color:pink;
+}
 .row{
   text-align:center;
   
@@ -8,6 +12,6 @@
   
 }
 #result{
-    color:red;
-    font-size:20px;
+    color:skyBlue;
+    font-size:30px;
     }

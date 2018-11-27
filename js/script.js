@@ -4,7 +4,7 @@
 
 //GLOBAL VARIABLES
 /* global $ */
-$("#shoot").click(function(){
+$("shoot").click(function(){
     var input = $("#input").val();
 
     $("#result").text(results());
